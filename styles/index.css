@@ -11,7 +11,7 @@ body {
 }
 h1 {
   color: whitesmoke;
-  font-size: 70px;
+  font-size: 80px;
 }
 
 h3 {
@@ -30,16 +30,13 @@ p {
   background-color: var(--primary-color);
   opacity: 0.8;
   padding: 5px 10px;
+  width: 100%;
 }
 
 .footer p {
   color: whitesmoke;
   font-size: 12px;
   margin: 0;
-}
-
-.grid {
-  margin: 0px 100px;
 }
 
 .grid-overlay {
@@ -93,4 +90,96 @@ p {
 
 .page-hero img {
   max-width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    bottom: 0;
+    position: fixed;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .overlay h1 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .footer {
+    bottom: 0;
+    position: fixed;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .overlay h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .grid-overlay p {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 45px;
+    top: 35%;
+  }
+  .grid-overlay p {
+    margin-top: 33px;
+  }
+  .footer {
+    bottom: 100;
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay h1 {
+    font-size: 35px;
+    top: 33%;
+  }
+
+  .grid-overlay p {
+    margin-top: 33px;
+  }
+}
+
+@media (max-width: 507px) {
+  .grid-overlay p {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 442px) {
+  .grid-overlay p {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 415px) {
+  .grid-overlay p {
+    margin-top: 21px;
+  }
+}
+
+@media (max-width: 400px) {
+  .overlay h1 {
+    font-size: 30px;
+    top: 30%;
+  }
+  @media (max-width: 380px) {
+    .grid-overlay p {
+      margin-top: 18px;
+    }
+  }
 }
