@@ -27,6 +27,11 @@ p {
   font-size: 16px;
 }
 
+.grid img {
+  max-width: 100%;
+  height: 100%;
+}
+
 .grid-overlay {
   position: absolute;
   top: 80%;
@@ -36,11 +41,6 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
   border-left: 12px solid white;
   border-right: 12px solid white;
-}
-
-.grid-overlay img {
-  max-width: 100%;
-  height: 100%;
 }
 
 .grid-overlay p {
