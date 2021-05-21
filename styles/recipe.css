@@ -18,10 +18,31 @@ h3 {
   font-weight: 550;
   opacity: 0.9;
 }
-
+h4 {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+li {
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 5px;
+}
 p {
   color: var(--primary-color);
   font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients li {
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+  color: var(--primary-color);
+  font-size: 16px;
+  padding: 5px;
 }
 
 .footer {
@@ -36,36 +57,6 @@ p {
   opacity: 0.9;
 }
 
-.grid-overlay {
-  position: absolute;
-  top: 80%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-left: 12px solid white;
-  border-right: 12px solid white;
-  transition: 0.4s ease-in;
-}
-
-.grid-overlay p {
-  color: whitesmoke;
-  text-align: center;
-  margin-top: 12px;
-}
-
-.latest-recipes {
-  position: relative;
-}
-
-.latest-recipes:hover .grid-overlay {
-  top: 0;
-}
-
-.latest-recipes img {
-  position: relative;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -74,7 +65,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .overlay h1 {
@@ -148,9 +139,6 @@ p {
     font-size: 13px;
     top: 66%;
   }
-  .grid-overlay p {
-    margin-top: 8px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -162,9 +150,7 @@ p {
     font-size: 12px;
     top: 58%;
   }
-  .grid-overlay p {
-    margin-top: 33px;
-  }
+
   .page-hero-desktop {
     display: none;
   }
@@ -193,9 +179,6 @@ p {
     font-size: 9px;
     top: 60%;
   }
-  .grid-overlay p {
-    margin-top: 33px;
-  }
 }
 
 @media (max-width: 507px) {
@@ -206,9 +189,6 @@ p {
   .overlay p {
     font-size: 9px;
     top: 58%;
-  }
-  .grid-overlay p {
-    margin-top: 28px;
   }
 }
 
@@ -221,16 +201,8 @@ p {
     font-size: 8px;
     top: 56%;
   }
-  .grid-overlay p {
-    margin-top: 25px;
-  }
 }
 
-@media (max-width: 415px) {
-  .grid-overlay p {
-    margin-top: 21px;
-  }
-}
 @media (max-width: 400px) {
   .overlay h1 {
     font-size: 30px;
@@ -239,12 +211,6 @@ p {
   .overlay p {
     font-size: 8px;
     top: 54%;
-  }
-}
-
-@media (max-width: 380px) {
-  .grid-overlay p {
-    margin-top: 18px;
   }
 }
 
