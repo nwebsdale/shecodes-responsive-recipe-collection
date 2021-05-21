@@ -3,9 +3,6 @@
   --secondary-color: rgb(128, 128, 128);
 }
 
-a {
-  color: whitesmoke;
-}
 body {
   padding-top: 57px;
 }
@@ -22,12 +19,21 @@ h3 {
   opacity: 0.9;
 }
 
-img {
-}
-
 p {
   color: var(--primary-color);
   font-size: 16px;
+}
+
+.footer {
+  color: var(--secondary-color);
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  font-size: 10px;
+  opacity: 0.9;
 }
 
 .grid-overlay {
