@@ -33,10 +33,14 @@ p {
   bottom: 0;
   right: 0;
   left: 0;
-  height: 20%;
   background-color: rgba(0, 0, 0, 0.3);
   border-left: 12px solid white;
   border-right: 12px solid white;
+}
+
+.grid-overlay img {
+  max-width: 100%;
+  height: 100%;
 }
 
 .grid-overlay p {
