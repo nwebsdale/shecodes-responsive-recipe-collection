@@ -79,11 +79,20 @@ p {
   top: 65%;
 }
 
-.page-hero {
+.page-hero-desktop {
   position: relative;
 }
 
-.page-hero img {
+.page-hero-desktop img {
+  max-width: 100%;
+}
+
+.page-hero-mobile {
+  display: none;
+  position: relative;
+}
+
+.page-hero-mobile img {
   max-width: 100%;
 }
 
@@ -119,6 +128,7 @@ p {
   p {
     font-size: 12px;
   }
+
   .overlay h1 {
     font-size: 60px;
     top: 28%;
@@ -135,36 +145,42 @@ p {
 @media (max-width: 768px) {
   .overlay h1 {
     font-size: 55px;
-    top: 22%;
+    top: 38%;
   }
   .overlay p {
     font-size: 12px;
-    top: 68%;
+    top: 58%;
   }
   .grid-overlay p {
     margin-top: 33px;
+  }
+  .page-hero-desktop {
+    display: none;
+  }
+  .page-hero-mobile {
+    display: block;
   }
 }
 
 @media (max-width: 650px) {
   .overlay h1 {
     font-size: 50px;
-    top: 20%;
+    top: 36%;
   }
   .overlay p {
     font-size: 11px;
-    top: 64%;
+    top: 58%;
   }
 }
 
 @media (max-width: 576px) {
   .overlay h1 {
     font-size: 40px;
-    top: 21%;
+    top: 36%;
   }
   .overlay p {
     font-size: 9px;
-    top: 64%;
+    top: 60%;
   }
   .grid-overlay p {
     margin-top: 33px;
@@ -174,11 +190,11 @@ p {
 @media (max-width: 507px) {
   .overlay h1 {
     font-size: 40px;
-    top: 20%;
+    top: 34%;
   }
   .overlay p {
     font-size: 9px;
-    top: 64%;
+    top: 58%;
   }
   .grid-overlay p {
     margin-top: 28px;
@@ -188,11 +204,11 @@ p {
 @media (max-width: 442px) {
   .overlay h1 {
     font-size: 35px;
-    top: 20%;
+    top: 32%;
   }
   .overlay p {
     font-size: 8px;
-    top: 64%;
+    top: 56%;
   }
   .grid-overlay p {
     margin-top: 25px;
@@ -207,11 +223,11 @@ p {
 @media (max-width: 400px) {
   .overlay h1 {
     font-size: 30px;
-    top: 20%;
+    top: 30%;
   }
   .overlay p {
     font-size: 8px;
-    top: 64%;
+    top: 54%;
   }
 }
 
@@ -224,10 +240,10 @@ p {
 @media (max-width: 350px) {
   .overlay h1 {
     font-size: 30px;
-    top: 18%;
+    top: 28%;
   }
   .overlay p {
     font-size: 7px;
-    top: 64%;
+    top: 52%;
   }
 }
