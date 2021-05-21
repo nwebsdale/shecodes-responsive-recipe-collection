@@ -45,6 +45,7 @@ p {
   background-color: rgba(0, 0, 0, 0.3);
   border-left: 12px solid white;
   border-right: 12px solid white;
+  transition: 0.4s ease-in;
 }
 
 .grid-overlay p {
@@ -55,6 +56,10 @@ p {
 
 .latest-recipes {
   position: relative;
+}
+
+.latest-recipes:hover .grid-overlay {
+  top: 0;
 }
 
 .latest-recipes img {
