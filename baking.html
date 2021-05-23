@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Natasha Websdale | Recipe Collection | Homepage</title>
-    <meta
-      name="description"
-      content="Find a collection of inspiring recipes that are easy, delicious and fun"
-    />
+    <title>Natasha Websdale | Baking</title>
+    <meta name="description" content="Explore baking recipes here" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,7 +20,7 @@
       src="https://kit.fontawesome.com/aefd0a182d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/baking.css" />
   </head>
   <body>
     <nav
@@ -48,14 +45,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item me-2">
-              <a class="nav-link active" aria-current="page" href="/"
-                >Homepage</a
-              >
+              <a class="nav-link" href="/">Homepage</a>
             </li>
 
             <li class="nav-item dropdown me-2">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle active"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -66,7 +61,12 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="./baking.html">Baking</a>
+                  <a
+                    class="dropdown-item active"
+                    aria-current="page"
+                    href="./baking.html"
+                    >Baking</a
+                  >
                 </li>
                 <li>
                   <a class="dropdown-item" href="./cooking.html">Cooking</a>
@@ -85,71 +85,62 @@
     </nav>
     <div class="page-hero-desktop">
       <img
-        src="./images/page-hero-homepage.png"
+        src="./images/page-hero-baking-desktop.png"
         alt="Various Cooking Ingredients"
       />
-      <div class="d-flex justify-content-center overlay text-uppercase">
-        <h1>Recipe Collection</h1>
-        <p>
-          Find a collection of inspiring recipes that are easy, delicious and
-          fun
-        </p>
+      <div class="d-flex justify-content-center overlay">
+        <h1 class="text-uppercase">Baking Recipes</h1>
+        <!-- <p>The best recipe for a super chocolatey, fudgy brownies</p> -->
       </div>
     </div>
 
     <div class="page-hero-mobile">
       <img
-        src="./images/page-hero-homepage-mobile.png"
+        src="./images/page-hero-baking-mobile.png"
         alt="Various Cooking Ingredients"
       />
       <div class="d-flex justify-content-center overlay">
-        <h1 class="text-uppercase">Recipe Collection</h1>
-        <p>
-          Find a collection of inspiring recipes that are easy, delicious and
-          fun
-        </p>
+        <h1 class="text-uppercase">Baking Recipes</h1>
+        <!-- <p>The best recipe for a super chocolatey, fudgy brownies</p> -->
       </div>
     </div>
     <div class="container">
-      <div class="grid pt-2">
-        <h3 class="mb-3 mt-3 text-uppercase">Latest Recipes:</h3>
-        <div class="row mb-2">
-          <div class="col-md-4 mt-2 latest-recipes">
-            <a href="./paella.html"
-              ><img
-                src="images/paella.jpg"
-                class="img-fluid rounded"
-                alt="Paella"
-              />
-              <div class="grid-overlay">
-                <p>Spainish Paella</p>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 mt-2 latest-recipes">
-            <a href="./fruit-scones.html">
-              <img
-                src="images/scones.jpg"
-                class="img-fluid rounded"
-                alt="Fruit Scones"
-              />
-              <div class="grid-overlay">
-                <p>Fruit Scones</p>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mt-2 latest-recipes">
-            <a href="./brownies.html"
-              ><img
-                src="images/chocolate-brownies.jpg"
-                class="img-fluid rounded"
-                alt="Chocolate Brownies"
-              />
-              <div class="grid-overlay">
-                <p>Chocolate Brownies</p>
-              </div></a
-            >
-          </div>
+      <div class="row mt-3 mb-2">
+        <div class="col-sm-6 mt-3 latest-recipes">
+          <a href="./brownies.html"
+            ><img
+              src="images/chocolate-brownies.jpg"
+              class="img-fluid rounded"
+              alt="Chocolate Brownies"
+            />
+            <div class="grid-overlay">
+              <p>Chocolate Brownies</p>
+            </div></a
+          >
+        </div>
+        <div class="col-sm-6 mt-3 latest-recipes">
+          <a href="./fruit-scones.html">
+            <img
+              src="images/scones.jpg"
+              class="img-fluid rounded"
+              alt="Fruit Scones"
+            />
+            <div class="grid-overlay">
+              <p>Fruit Scones</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 mt-3 latest-recipes">
+          <a href="./rock-cakes.html"
+            ><img
+              src="images/temp.jpg"
+              class="img-fluid rounded"
+              alt="Rock Cakes"
+            />
+            <div class="grid-overlay">
+              <p>Rock Cakes</p>
+            </div></a
+          >
         </div>
       </div>
     </div>
