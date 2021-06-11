@@ -21,6 +21,16 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./styles/about.css" />
+
+    <script>
+        function initMap() {
+  var location = { lat: -25.363, lng: 131.044 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: location,
+  });
+}
+    </script>
   </head>
   <body>
     <nav
@@ -50,7 +60,7 @@
 
             <li class="nav-item dropdown me-2">
               <a
-                class="nav-link dropdown-toggle active"
+                class="nav-link dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -65,8 +75,8 @@
                 </li>
                 <li>
                   <a
-                    class="dropdown-item active"
-                    aria-current="page"
+                    class="dropdown-item"
+                  
                     href="./cooking.html"
                     >Cooking</a
                   >
@@ -74,7 +84,7 @@
               </ul>
             </li>
             <li class="nav-item me-2">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link active"   aria-current="page" href="about.html">About</a>
             </li>
             <li class="nav-item me-2">
               <a class="nav-link" href="about.html#contact">Contact</a>
@@ -85,24 +95,35 @@
     </nav>
 
     <div class="container ps-5 pe-5 pb-3">
-      <h1 class="p-5">Hello, nice to meet you</h1>
+      <h1 class="pt-5">Hello, nice to meet you</h1>
 
-      <div class="row mb-2">
-        <div class="col-md-4 mt-2">
-          <img src="images/paella.jpg" class="img-fluid rounded" alt="Paella" />
+      <div class="row mb-2 ps-3 pe-3 pt-3">
+        <div class="col-md-5 mt-2">
+          <img
+            src="images/profile.jpeg"
+            class="img-fluid rounded"
+            alt="Paella"
+          />
         </div>
-        <div class="col-md-1 mt-2 social">
-          <row>
-            <div class="col-12"><i class="fab fa-linkedin"></i></div>
-          </row>
-          <row>
-            <div class="col-12"><i class="fab fa-linkedin"></i></div>
-          </row>
-          <row>
-            <div class="col-12"><i class="fab fa-linkedin"></i></div>
-          </row>
+        <div class="col-md-1 mt-2 social social-desktop">
+          <div class="row">
+            <div class="col">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
         </div>
-        <div class="col-md-7 mt-2 latest-recipes">
+
+        <div class="col-md-6 mt-2 latest-recipes">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -113,34 +134,16 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
+
+        <div class="row social social-mobile">
+          <div class="col text-center"><i class="fab fa-linkedin"></i></div>
+          <div class="col text-center"><i class="fab fa-linkedin"></i></div>
+          <div class="col text-center"><i class="fab fa-linkedin"></i></div>
+        </div>
       </div>
-      <div class="grid ps-5 pt-3 pe-5">
+      <div class="grid ps-5 pt-3 pe-5 mb-4">
         <h3 class="mb-3 mt-3 text-uppercase">Favourite Recipes:</h3>
         <div class="row mb-2">
-          <div class="col-md-4 mt-2 latest-recipes">
-            <a href="./paella.html"
-              ><img
-                src="images/paella.jpg"
-                class="img-fluid rounded"
-                alt="Paella"
-              />
-              <div class="grid-overlay">
-                <p>Spainish Paella</p>
-              </div></a
-            >
-          </div>
-          <div class="col-md-4 mt-2 latest-recipes">
-            <a href="./fruit-scones.html">
-              <img
-                src="images/scones.jpg"
-                class="img-fluid rounded"
-                alt="Fruit Scones"
-              />
-              <div class="grid-overlay">
-                <p>Fruit Scones</p>
-              </div>
-            </a>
-          </div>
           <div class="col-md-4 mt-2 latest-recipes">
             <a href="./brownies.html"
               ><img
@@ -153,8 +156,78 @@
               </div></a
             >
           </div>
+          <div class="col-md-4 mt-2 latest-recipes">
+            <a href="./laksa.html"
+              ><img
+                src="images/laksa.jpg"
+                class="img-fluid rounded"
+                alt="Laksa"
+              />
+              <div class="grid-overlay">
+                <p>Laksa</p>
+              </div></a
+            >
+          </div>
+          <div class="col-md-4 mt-2 latest-recipes">
+            <a href="./lemon-drizzle.html">
+              <img
+                src="images/lemon-drizzle.jpg"
+                class="img-fluid rounded"
+                alt="Lemon Drizzle"
+              />
+              <div class="grid-overlay">
+                <p>Lemon Drizzle</p>
+              </div>
+            </a>
+          </div>
         </div>
+        <h3 class="mb-3 mt-4 pt-3 text-uppercase">Contact:</h3>
+   
+        <div id="contact" class="contact">
+
+
+          
+          <div class="row">
+              <div class="col-sm-3">
+                  <p class="mb-0"><strong>Name:</strong> Natasha Websdale</p>
+                  <p class="mb-0"><strong>Email:</strong> natashawebsdale@hotmail.co.uk</p>
+                  <p class="mb-0"><strong>Telephone:</strong> 07000 000000</p>
+                  <br />
+                  <p class="mb-0"><strong>Address:</strong></p>
+                  <p>Buckingham Palace <br />
+                        London<br />
+                SW1A 1AA<br />
+                United Kingdom</p>
+              </div>
+              <div class="col-sm-9">
+                  <div class="map" id="map"></div>
+               
+              </div>
+          </div>
       </div>
+      </div>
+      
+      
+
+      
+        
+      </div>
+    </div>
+    <script>
+      function initMap() {
+        var location = { lat: 51.501, lng: -0.141 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: location,
+        });
+      }
+    </script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB04YgwfcLIqjzEwaoUYCnMxUEz3WKpw-A&callback=initMap"
+    ></script>
     </div>
     <small class="ms-4 mb-1 p-0 footer">
       This website is coded by Natasha Websdale and is
