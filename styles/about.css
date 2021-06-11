@@ -60,7 +60,8 @@ strong {
 .grid-overlay p {
   color: whitesmoke;
   text-align: center;
-  margin-top: 12px;
+  padding: 0px;
+  margin-top: 15px;
 }
 
 .latest-recipes {
@@ -81,28 +82,10 @@ strong {
   background-color: blue;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.overlay h1 {
-  opacity: 0.9;
-  position: absolute;
-  top: 30%;
-}
-
-.overlay p {
-  color: whitesmoke;
-  opacity: 0.9;
-  position: absolute;
-  top: 65%;
+@media (max-width: 1200px) {
+  .grid-overlay p {
+    margin-top: 8px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -113,6 +96,9 @@ strong {
 
   h1 {
     font-size: 50px;
+  }
+  .grid-overlay p {
+    margin-top: 3px;
   }
 }
 @media (min-width: 768px) {
@@ -128,20 +114,26 @@ strong {
   .social-desktop {
     display: none;
   }
-  /* .social-mobile {
-    display: block;
-  } */
+  .grid-overlay p {
+    margin-top: 18px;
+  }
 }
 
 @media (max-width: 650px) {
 }
 
 @media (max-width: 576px) {
+  .grid-overlay p {
+    margin-top: 17px;
+  }
 }
 
 @media (max-width: 507px) {
   h1 {
     font-size: 30px;
+  }
+  .grid-overlay p {
+    margin-top: 12px;
   }
 }
 
@@ -149,11 +141,17 @@ strong {
   h1 {
     font-size: 25px;
   }
+  .grid-overlay p {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 370px) {
   h1 {
     font-size: 20px;
     top: 28%;
+  }
+  .grid-overlay p {
+    margin-top: 4px;
   }
 }
